@@ -238,7 +238,7 @@ impl Hand {
         else if self.is_two_pair() {self.rank = 7; self.get_two_pair();}
         else if self.is_pair() {self.rank = 8; self.get_pair();}
         else if self.is_high_card() {self.rank = 9; self.get_high_card();}
-        else {println!("YOU FUCKED UP");}
+        else {println!("broken input");}
     }
 
     fn is_straight_flush(&mut self) -> bool {
